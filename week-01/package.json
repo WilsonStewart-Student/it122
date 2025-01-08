@@ -1,0 +1,11 @@
+{
+  "name": "it122",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": 
+  {"test": "echo \"Error: no test specified\" && exit 1"},
+  "author": "Wilson Stewart",
+  "license": "ISC",
+  "description": "HW #1 - Node.js Up and Running"
+}
