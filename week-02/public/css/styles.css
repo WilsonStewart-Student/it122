@@ -1,0 +1,184 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+:root
+{
+    --color-lightest: white;
+    --color-middlest: #ff3b3b;
+    --color-darkest: black;
+}
+
+/* -==- */
+
+a
+{
+    color: var(--color-middlest);
+    text-decoration: none;
+}
+
+/* -==- */
+
+body
+{
+    color: var(--color-lightest);
+    background-color: var(--color-darkest);
+}
+
+#wrapper
+{
+    border: 2.5px var(--color-lightest) double;
+
+    width: 940px;
+    padding: 20px;
+    margin: 20px auto;
+
+    position: relative;
+
+    font-size: 24px;
+    text-align: center;
+}
+#wrapper::before, #wrapper::after 
+{
+    content: '✺﹡- -';
+
+    color: var(--color-middlest);
+
+    position: absolute;
+    left: -12px;
+    top: -12px;
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+
+    background-color: var(--color-darkest);
+}
+#wrapper::after 
+{
+    left: auto;
+    top: auto;
+    right: -12px;
+    bottom: -12px;
+
+    transform: scale(-1, -1);
+} 
+
+section
+{
+    margin-top: 20px;
+}
+section:first-of-type
+{
+    margin-top: 0;
+}
+
+/* -==- */
+
+nav ul
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+nav li
+{
+    text-align: left;
+
+    font-variant: small-caps;
+    margin-right: 10px;
+}
+nav li:last-of-type
+{
+    margin-right: 0;
+}
+
+/* -==- */
+
+ul
+{
+    list-style-type: none;
+}
+
+ul#butterflies
+{
+    display: flex;
+    
+    width: 100%;
+}
+ul#butterflies li
+{
+    display: inline-block;
+    margin-right: 20px;
+
+    flex-grow: 1;
+}
+ul#butterflies li:last-of-type
+{
+    margin-right: 0;
+}
+ul#butterflies img
+{
+    width: 100%;
+    display: block;
+
+    border: 1px var(--color-lightest) dashed;
+    outline: 2px var(--color-lightest) dashed;
+}
+ul#butterflies p
+{
+    margin-top: 5px;
+    font-size: 18px;
+    font-variant: small-caps;
+}
+
+/* -==- */
+
+.detail img
+{
+
+    border: 2px var(--color-lightest) dashed;
+    outline: 4px var(--color-lightest) dashed;
+
+    background-color: black;
+}
+.detail h1
+{
+    font-variant: small-caps;
+}
+
+/* -==- */
+
+@media only screen and (max-width: 980px) 
+{
+    #wrapper
+    {
+    width: 95.918367346%; /* 940 / 980, so a seamless transition! With a bad-to-look-at number. */
+    margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 800px) 
+{
+    ul#butterflies
+    {
+        flex-direction: column;
+    }
+    ul#butterflies li
+    {
+        padding: 20px;
+        margin-right: 0px;
+    }
+    ul#butterflies p
+    {
+        margin-top: 5px;
+        font-size: 24px;
+        font-variant: small-caps;
+    }
+}
