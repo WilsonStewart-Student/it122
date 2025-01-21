@@ -32,7 +32,7 @@
             <ul id="butterflies">
                 <% butterflies.forEach(function(butterflies) { %>
                 <li>
-                    <a href="/detail?title=<%= butterflies.title %>"> <img src="<%= butterflies.src %>"> </a>
+                    <a href="/detail?title=<%= butterflies.title %>"> <img src="<%= butterflies.src %>" alt="<%= butterflies.alt %>"> </a>
                     <p> <%= butterflies.title %> </p>
                 </li>
                 <% }); %>
