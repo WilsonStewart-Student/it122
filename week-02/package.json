@@ -3,6 +3,11 @@
   "type": "module",
   "version": "2.0.0",
   "main": "index.js",
+  "repository": 
+  {
+    "type": "git",
+    "url": "git+https://github.com/WilsonStewart-Student/it122.git"
+  },
   "scripts": 
   {
     "test": "echo \"Error: no test specified\" && exit 1"
