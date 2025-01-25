@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <!-- Unicode flower as favicon. -->
+    <link rel="icon" href="data:image/svg+xml, <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22> <text y=%22.9em%22 font-size=%2290%22> ❁ </text> </svg>">
+</head>
+
+<body class="index">
+    <div id="wrapper">
+
+        <section>
+            <nav>
+                <ul>
+                    <li> <a href="/">Home</a> </li>
+                    <li> <a href="/about">About</a> </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <p>Welcome to the home page!</p>
+        </section>
+
+        <section>
+            <!-- For each butterfly, display these parts of it. -->
+            <ul id="butterflies">
+                <% butterflies.forEach(function(butterflies) { %>
+                <li>
+                    <a href="/detail?title=<%= butterflies.title %>"> <img src="<%= butterflies.src %>"> </a>
+                    <p> <%= butterflies.title %> </p>
+                </li>
+                <% }); %>
+            </ul>
+        </section>
+
+    </div> <!-- End "wrapper". -->
+</body>
+
+</html>
