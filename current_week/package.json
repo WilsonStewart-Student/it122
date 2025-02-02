@@ -1,7 +1,7 @@
 {
   "name": "it122",
   "type": "module",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "main": "index.js",
   "repository": 
   {
@@ -14,10 +14,12 @@
   },
   "author": "Wilson Stewart",
   "license": "ISC",
-  "description": "HW #2 - Express Yourself",
+  "description": "HW #3 - Data Storage with MongoDB",
   "dependencies": 
   {
     "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.5"
   }
 }
